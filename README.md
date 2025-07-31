@@ -44,12 +44,10 @@ npm install
 ```
 
 3. Set up environment variables
-```bash
-cp .env.example .env
-# Add your API keys and configuration
-```
+add your deepseek api in backend/configure.py
+add your Azure Speech api  and configuration in frontend/js/chat.js line 8 to 11
 
-4. Run the application
+5. Run the application
 ```bash
 cd SHU-Assistant-Local
 uvicorn backend.main:app --reload
