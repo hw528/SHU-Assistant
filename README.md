@@ -44,8 +44,8 @@ npm install
 ```
 
 3. Set up environment variables
-add your deepseek api in backend/configure.py
-add your Azure Speech api  and configuration in frontend/js/chat.js line 8 to 11
+-add your deepseek api in backend/configure.py
+-add your Azure Speech api  and configuration in frontend/js/chat.js line 8 to 11
 
 5. Run the application
 ```bash
