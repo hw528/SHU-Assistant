@@ -37,17 +37,11 @@ The system follows a three-tier architecture:
 git clone https://github.com/yourusername/shu-assistant.git
 ```
 
-2. Install dependencies
-```bash
-pip install -r requirements.txt
-npm install
-```
-
-3. Set up environment variables
+2. Set up environment variables
 - add your deepseek api in backend/configure.py
 - add your Azure Speech api  and configuration in frontend/js/chat.js line 8 to 11
 
-5. Run the application
+3. Run the application
 ```bash
 cd SHU-Assistant-Local
 uvicorn backend.main:app --reload
