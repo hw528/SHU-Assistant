@@ -1,0 +1,173 @@
+@font-face {
+    font-family: '金山云技术体';
+    src: url('https://shu-assistant.obs.cn-east-3.myhuaweicloud.com/fonts/%E9%87%91%E5%B1%B1%E4%BA%91%E6%8A%80%E6%9C%AF%E4%BD%93.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'msyahei';
+    src: url('https://shu-assistant.obs.cn-east-3.myhuaweicloud.com/fonts/msyahei.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: '雅酷黑45';
+    src: url('https://shu-assistant.obs.cn-east-3.myhuaweicloud.com/fonts/%E9%9B%85%E9%85%B7%E9%BB%9145.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'WPS灵秀黑';
+    src: url('https://shu-assistant.obs.cn-east-3.myhuaweicloud.com/fonts/WPS%E7%81%B5%E7%A7%80%E9%BB%91.ttf') format('truetype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "PingFang SC", "Microsoft YaHei", Arial, sans-serif;
+    line-height: 1.6;
+    background: url('https://shu-assistant.obs.cn-east-3.myhuaweicloud.com/images/background.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.welcome-text {
+    position: absolute;  /* 添加绝对定位 */
+    top: 1em;           /* 距离顶部距离 */
+    left: 4em;          /* 距离左侧距离 */
+    color: white;
+    font-family: '金山云技术体';
+    font-size: 1.9em;
+    padding-left: 10px;
+    background: transparent;
+    border-radius: 30px;
+    letter-spacing: 1px;
+}
+
+.header {
+    color: white;
+    font-family: '金山云技术体';
+    text-align: center;
+    padding: 2px;
+    max-width: 80%;
+    margin-bottom: 40px;
+}
+
+.header h1 {
+    font-family: 'WPS灵秀黑';
+    color: white;
+    font-size: 5em;
+    margin-bottom: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.subtitle {
+    font-family: '金山云技术体';
+    color: white;
+    font-size: 2em;
+    line-height: 1.6;
+    letter-spacing: 1px;
+    margin: 0 auto 40px;
+    max-width: 80%;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.button-container a {
+    text-decoration: none;
+}
+
+.start-button {
+    position: absolute;
+    bottom: 16vh;
+    font-family: 'WPS灵秀黑';
+    background-color: transparent;
+    border: 3px solid white;
+    padding: 11px 13px;
+    padding-bottom: 4.3px;
+    padding-top: 4.3px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 2em;
+    font-weight: 400;
+    letter-spacing: 1.1px;
+    left: 45%;
+}
+
+.start-button:hover {
+    transform: translateY(-2px)translateX(2px);
+    box-shadow: 0 6px 20px rgba(255, 255, 255, 0.3);
+    background-color: transparent;
+}
+
+.avatar {
+    background-color: transparent;
+    flex-shrink: 0;
+    position: absolute;
+    top: 0em;
+    left: 1em;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 9999px;
+}
+
+.avatar img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.language-selector {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    gap: 12px;
+    z-index: 1000;
+}
+
+.language-selector button {
+    background: rgba(255, 255, 255, 0.9);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    padding: 8px 16px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #2c3e50;
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.language-selector button:hover {
+    transform: translateY(-2px);
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    border-color: #3b9ae7;
+}
+
+/* 当前选中的语言按钮样式 */
+.language-selector button.active {
+    background: #3b9ae7;
+    color: white;
+    border-color: #3b9ae7;
+}
+
+.language-selector button.active:hover {
+    background: #2d8ad9;
+}
